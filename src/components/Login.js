@@ -1,6 +1,7 @@
 import React from 'react'
 import './Login.css';
 import '../App.css';
+import image from "../images/sports.png"
 import Button from '@material-ui/core/Button';//import Video2 from "./videos/video-2.mp4"
 import Checkbox from '@material-ui/core/Checkbox';
 import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank';
@@ -21,17 +22,17 @@ function Login() {
   };
     return (
         <div className='hero-container'>
-            {/* <img src = {image} className="img-fluid-animated"/> */}
+            <img src = {image} className="img-fluid-animated"/>
             <div className="text">
             <h1>BookIT</h1>
-            <p>Login as User or Admin</p>
+            <p>Simplifying the way of online Bookings</p>
     <div className='check'      >  
     <FormControlLabel control={<Checkbox checked={checked} onChange={handleChange} />} label="User" />   
     <FormControlLabel control={<Checkbox checked={checked1} onChange={handleChange1} />} label="Admin" />             
     </div>
     <div className = "hero-btns">
             
-    <Button variant="contained" color="white">
+    <Button variant="outlined" color="success">
         Sign In using Google Account
       </Button>
            
